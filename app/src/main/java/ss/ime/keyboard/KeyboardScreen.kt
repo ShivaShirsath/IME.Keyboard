@@ -63,7 +63,6 @@ fun KeyboardKey(
 ) {
     val interactionSource = remember { MutableInteractionSource() }
     val pressed = interactionSource.collectIsPressedAsState()
-    Box(modifier = modifier) {
         Text(keyboardKey, Modifier
             .fillMaxWidth()
             .padding(2.dp)
@@ -76,7 +75,6 @@ fun KeyboardKey(
                 top = 16.dp,
                 bottom = 16.dp
             )
-
         )
         if (pressed.value) {
             Text(
@@ -92,5 +90,4 @@ fun KeyboardKey(
                     )
             )
         }
-    }
 }
