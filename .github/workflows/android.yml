@@ -27,7 +27,7 @@ jobs:
       - name: Build APK
         run: |
          gradle wrapper
-         bash ./gradlew assembleDebug --stacktrace
+         bash ./gradlew assembleDebug 
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
