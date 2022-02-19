@@ -36,11 +36,9 @@ fun KeyboardScreen() {
                     }
                 }
             }
-
         }
     }
 }
-
 @Composable
 fun FixedHeightBox(modifier: Modifier, height: Dp, content: @Composable () -> Unit) {
     Layout(modifier = modifier, content = content) { measurables, constraints ->
@@ -54,8 +52,6 @@ fun FixedHeightBox(modifier: Modifier, height: Dp, content: @Composable () -> Un
         }
     }
 }
-
-
 @Composable
 fun KeyboardKey(
     keyboardKey: String,
