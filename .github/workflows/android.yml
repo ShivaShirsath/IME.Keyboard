@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - main
 jobs:
   isvalid:
     if: startsWith(github.event.commits[0].message, 'v')
