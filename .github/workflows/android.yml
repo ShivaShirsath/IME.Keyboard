@@ -25,7 +25,9 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       - name: Build APK
-        run: bash ./gradlew assembleDebug --stacktrace
+        run: |
+         gradle wrapper
+         bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
